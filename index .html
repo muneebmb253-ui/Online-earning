@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earn By Watching Ads</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Watch Ads & Earn</h1>
+    <div id="login">
+      <h2>Login</h2>
+      <input type="text" placeholder="Email" id="email"><br>
+      <input type="password" placeholder="Password" id="password"><br>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+      <h2>Welcome <span id="userName"></span>!</h2>
+      <p>Points: <span id="points">0</span></p>
+      <button onclick="watchAd()">🎥 Watch Ad (10 sec)</button>
+      <div id="timer" style="margin-top:10px;"></div>
+
+      <h3>💰 Withdraw Form</h3>
+      <input type="text" placeholder="Account Details"><br>
+      <button>Submit Request</button>
+
+      <h3>🔗 Referral Link</h3>
+      <input type="text" value="https://yoursite.netlify.app?ref=1234" readonly>
+
+      <h3>📈 Latest Earners</h3>
+      <ul id="fakeEarnings">
+        <li>Ali earned Rs.300 today</li>
+        <li>Fatima earned Rs.220 today</li>
+        <li>Usman earned Rs.450 today</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
